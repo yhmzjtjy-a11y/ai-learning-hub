@@ -3,27 +3,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>https://ai-tools-site-sandy-three.vercel.app/</loc>
+<loc>https://ai-learning-hub.vercel.app/</loc>
 </url>
 
 <url>
-<loc>https://ai-tools-site-sandy-three.vercel.app/about.html</loc>
+<loc>https://ai-learning-hub.vercel.app/about.html</loc>
 </url>
 
 <url>
-<loc>https://ai-tools-site-sandy-three.vercel.app/contact.html</loc>
+<loc>https://ai-learning-hub.vercel.app/contact.html</loc>
 </url>
 
 <url>
-<loc>https://ai-tools-site-sandy-three.vercel.app/privacy.html</loc>
+<loc>https://ai-learning-hub.vercel.app/privacy.html</loc>
 </url>
 
 <url>
-<loc>https://ai-tools-site-sandy-three.vercel.app/terms.html</loc>
+<loc>https://ai-learning-hub.vercel.app/terms.html</loc>
 </url>
 
 <url>
-<loc>https://ai-tools-site-sandy-three.vercel.app/blog/what-is-chatgpt.html</loc>
+<loc>https://ai-learning-hub.vercel.app/blog/what-is-chatgpt.html</loc>
+</url>
+
+<url>
+<loc>https://ai-learning-hub.vercel.app/blog/chatgpt-beginner-guide.html</loc>
+</url>
+
+<url>
+<loc>https://ai-learning-hub.vercel.app/blog/claude-vs-chatgpt.html</loc>
 </url>
 
 </urlset>
