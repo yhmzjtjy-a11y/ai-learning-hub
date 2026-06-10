@@ -1,1 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
+body {
+  line-height: 1.6;
+  color: #222;
+  background: #f7f9fc;
+}
+
+/* ===== 容器 ===== */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ===== 导航栏 ===== */
+header {
+  background: #0f172a;
+  padding: 15px 0;
+}
+
+header h2 {
+  color: white;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav {
+  display: inline-block;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* ===== Hero区域 ===== */
+.hero {
+  background: linear-gradient(135deg, #1e3a8a, #0f172a);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.hero img {
+  margin-top: 30px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* ===== 内容区 ===== */
+section {
+  padding: 50px 0;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* ===== 文章列表 ===== */
+ul {
+  list-style: none;
+}
+
+ul li {
+  background: white;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+ul li a {
+  text-decoration: none;
+  color: #0f172a;
+}
+
+ul li a:hover {
+  color: #2563eb;
+}
+
+/* ===== About box ===== */
+.about-site {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* ===== 作者框 ===== */
+.author-box {
+  margin-top: 40px;
+  padding: 20px;
+  background: #eef2ff;
+  border-left: 5px solid #4f46e5;
+  border-radius: 8px;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #38bdf8;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== 响应式 ===== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  nav {
+    display: block;
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+}
