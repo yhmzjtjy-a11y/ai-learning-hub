@@ -192,7 +192,6 @@ nav .logo img {
 }
 .banner-img {
     width: 100%;
-    height: 300px;      /* 你可以改高度 */
-    object-fit: cover;  /* 核心：不变形 + 自动裁剪 */
+    height: auto;
     display: block;
 }
