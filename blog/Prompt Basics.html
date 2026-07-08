@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Engineering Basics: Master AI Outputs - AI Learning Hub</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.8; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
+        .container { background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        h1 { color: #1e293b; font-size: 2.2em; border-bottom: 2px solid #e2e8f0; padding-bottom: 15px; }
+        h2 { color: #0f172a; margin-top: 30px; font-size: 1.5em; }
+        p { text-align: justify; margin-bottom: 20px; }
+        .meta { color: #64748b; font-size: 0.9em; margin-bottom: 30px; }
+        .back-btn { display: inline-block; margin-bottom: 20px; color: #2563eb; text-decoration: none; font-weight: bold; }
+        .code-box { background-color: #f1f5f9; border-left: 4px solid #3b82f6; padding: 15px; font-family: monospace; margin: 20px 0; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-btn">← Back to Home</a>
+        <h1>Prompt Basics: Improve AI Output Quality</h1>
+        <div class="meta">Published on July 8, 2026 | Category: Writing & Prompts</div>
+        
+        <p>The quality of an AI's response is directly proportional to the quality of the instructions it receives. Prompt Engineering is the practice of structuring text inputs so that they can be interpreted and processed optimally by generative AI models like ChatGPT, Claude, and Gemini. By mastering a few foundational principles, you can transform vague AI text into high-utility assets.</p>
+        
+        <h2>1. The Power of Role-Assigning (Persona)</h2>
+        <p>Before giving a task, always tell the AI who it is supposed to be. Giving the LLM a clear persona narrows down its probabilistic token selections, steering it away from generic responses toward specialized industry expertise.</p>
+        <div class="code-box">
+            <strong>Bad:</strong> Write a marketing email for my software.<br>
+            <strong>Good:</strong> Act as an expert SaaS Copywriter with 10 years of experience. Write a high-converting cold email targeting CTOs for our automated database optimization platform.
+        </div>
+        
+        <h2>2. Use the C-R-E-A-T-E Framework</h2>
+        <p>An effective, high-performing prompt generally consists of these core pillars:</p>
+        <ul>
+            <li><strong>Context:</strong> Explain the background situation and the target audience.</li>
+            <li><strong>Role:</strong> Specify the exact expertise required from the AI.</li>
+            <li><strong>Exemplar:</strong> Provide clear examples or format references if available.</li>
+            <li><strong>Action:</strong> Define the core task using clear verbs (e.g., summarize, analyze, rewrite).</li>
+            <li><strong>Target Length & Format:</strong> Mention whether you want bullet points, a JSON file, or an essay.</li>
+        </ul>
+
+        <h2>3. Limiting Hallucinations with Negative Constraints</h2>
+        <p>AI models are eager to please and will sometimes hallucinate facts if they don't know the answer. To maintain structural truth in data-critical reports, you must introduce explicit negative limitations into your prompts.</p>
+        <div class="code-box">
+            "Analyze this financial sheet. If you cannot find the direct factual answer to a metric within the provided document text, explicitly reply with 'Data not found' instead of estimating or generating an answer based on external knowledge."
+        </div>
+    </div>
+</body>
+</html>
+
