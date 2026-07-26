@@ -70,6 +70,7 @@ Read Guides
 <div class="search-box">
 
 <input 
+id="search-input"
 type="text"
 placeholder="Search AI tools, guides, and tutorials..."
 >
@@ -95,7 +96,7 @@ placeholder="Search AI tools, guides, and tutorials..."
 <div class="grid">
 
 
-<div class="category-card">
+<div class="category-card search-item">
 
 <div class="icon">
 ✍️
@@ -117,7 +118,7 @@ Explore →
 
 
 
-<div class="category-card">
+<div class="category-card search-item">
 
 <div class="icon">
 🛠️
@@ -140,7 +141,7 @@ Explore →
 
 
 
-<div class="category-card">
+<div class="category-card search-item">
 
 <div class="icon">
 ⚡
@@ -163,7 +164,7 @@ Explore →
 
 
 
-<div class="category-card">
+<div class="category-card search-item">
 
 <div class="icon">
 🧠
@@ -207,7 +208,7 @@ Explore →
 
 
 
-<div class="card">
+<div class="card search-item">
 
 <span class="tag">
 Beginner
@@ -235,7 +236,7 @@ Read Guide →
 
 
 
-<div class="card">
+<div class="card search-item">
 
 <span class="tag">
 Comparison
@@ -263,7 +264,7 @@ Read Guide →
 
 
 
-<div class="card">
+<div class="card search-item">
 
 <span class="tag">
 Tools
@@ -291,7 +292,7 @@ Read Guide →
 
 
 
-<div class="card">
+<div class="card search-item">
 
 <span class="tag">
 Prompt
@@ -407,7 +408,25 @@ Discover modern AI productivity methods.
 </footer>
 
 
+<script>
+document.getElementById('search-input').addEventListener('input', function(e) {
+    const query = e.target.value.toLowerCase().trim();
+    const cards = document.querySelectorAll('.search-item');
+    
+    cards.forEach(function(card) {
+        const title = card.querySelector('h3').textContent.toLowerCase();
+        const text = card.querySelector('p').textContent.toLowerCase();
+        
+        if (title.includes(query) || text.includes(query)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+});
+</script>
 
 </body>
 
 </html>
+
